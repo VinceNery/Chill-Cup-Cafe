@@ -1,7 +1,26 @@
-/*Global*/
+/* Global */
 body {
-    display: grid;
     overflow: hidden;
     font-size: 15px;
-
 }
+
+a{
+    text-decoration: none;
+    padding: 10px;
+}
+ul{
+    list-style-type: none;
+}
+
+/* Header */
+header{
+    display:flex;
+    margin: auto;
+    justify-content: space-between;
+    border: black solid 1px;
+    text-transform: uppercase;
+    display:flex;
+}
+
+
+/* Footer */
