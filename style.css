@@ -1,12 +1,14 @@
 @import url('https://fonts.google.com/specimen/Recursive?vfonly=true&sidebar.open=true&selection.family=Recursive');
 
+*{
+    box-sizing: border-box;
+}
 /* Global */
 body {
     font-family: 'Recursive', sans-serif;
-    box-sizing: border-box;
-    background-color: #e9e9e9;
-    margin: 0;
     color: #20292F;
+    background-color: #ffffff;
+    margin: 0;
     height: 100vh;
 }
 
@@ -19,109 +21,109 @@ ul {
     list-style-type: none;
 }
 
-button {
-    background-color: #E1E289;
-}
-
-/* Header */
-.header-wrapper {
-    overflow: hidden;
-    margin: auto;
-    border-bottom: black solid 1px;
-    display: flex;
-    background-color: #FFFFFF;
-    background-position: 0px 0px;
-    color: #20292F;
-}
-
-header .brand-name {
+button{
+    background-color: #DCA57D;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25.5px;
+    text-align: center;
     text-transform: uppercase;
-    margin-left: 20px;
-    font-size: 12px;
+    word-spacing: 0px;
+    border: none;
+    height: 54.5px;
+    width: 95px;
+    color: #ffffff;
+    text-decoration : rgb(255, 255, 255)
+}
+
+button :hover{
+    opacity: .6;
+    transition: all .4s ease-in-out;
+}
+
+/* ========== Container Wrapper ==========*/
+.container-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 4fr 4fr 2fr 2fr 1fr;
+    height: 100vh;
+}
+
+/*========== Navigation Bar ==========*/
+.header-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#header-container{
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.4);
+}
+
+.brand-name{
+    margin-left: 15px;
+    align-self: center;
+}
+
+.brand-name h1{
+    font-size: 25px;
     font-weight: 700;
 }
 
-header .nav-links-container {
-    display: flex;
-    margin-left: auto;
-
+.nav-links{
+    grid-column: 3;
+    padding: 5px;
+    align-items:center;
 }
 
-header .nav-links-container ul {
-    display: flex;
-    flex-direction: row;
-    margin: 20px 15px 0px 0px;
+.nav-links ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
 }
-
-header .nav-links-container a {
+.nav-links li{
+    margin: 0;
+    padding: 5px;
+}
+.nav-links a{
     text-align: center;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
     color: #20292F;
 }
 
-header .nav-links-container a:hover {
+.nav-links a:hover{
     opacity: .4;
     transition: all .4s ease-in-out;
 }
 
-/** Section Grid Container **/
-section {
+/* ========== Main ========== */
+.main-wrapper{
+    border: #000000 solid 1px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 4fr 4fr 2fr .5fr;
-    height: 100vh;
-}
+    
+}   
 
-/* Main */
-.landing-section-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
+/* ========== Showcase Display ==========*/
+.showcase-wrapper{
     border: #000000 solid 1px;
-    overflow: hidden;
 }
-#landing-image-cover{
-    opacity: 0.6;
-}
-.landing-content {
-    opacity: 1;
-    /* Content Placement in the center */
-    grid-column: 2;
-    grid-row: 2;
-    /* Content Layout*/
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    color: #000000;
-}
-
-/* Showcase */
-.showcase-section-wrapper {
-    background: #212738;
-    color: #EEF0F2;
+/* ========== Display Shop ========== */
+.display-wrapper{
     border: #000000 solid 1px;
 }
 
-
-/*Display Section*/
-.display-section-wrapper {
+/* ========== Information Section==========*/
+.information-wrapper{
     border: #000000 solid 1px;
 }
 
-.information-section-wrapper {
+/* ========== Footer ========== */
+.footer-wrapper{
     border: #000000 solid 1px;
 }
 
-.footer-section-wrapper {
-    border: #000000 solid 1px;
-}
-
-/* Main */
-
-/* Footer */
 
 /* Media Query */
 
