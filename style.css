@@ -1,12 +1,13 @@
 @import url('https://fonts.google.com/specimen/Recursive?vfonly=true&sidebar.open=true&selection.family=Recursive');
+
 /* Global */
 body {
     font-family: 'Recursive', sans-serif;
     box-sizing: border-box;
-    color: #000000;
     background-color: #e9e9e9;
     margin: 0;
     color: #20292F;
+    height: 100vh;
 }
 
 a {
@@ -18,8 +19,12 @@ ul {
     list-style-type: none;
 }
 
+button {
+    background-color: #E1E289;
+}
+
 /* Header */
-header {
+.header-wrapper {
     overflow: hidden;
     margin: auto;
     border-bottom: black solid 1px;
@@ -32,7 +37,8 @@ header {
 header .brand-name {
     text-transform: uppercase;
     margin-left: 20px;
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 header .nav-links-container {
@@ -44,13 +50,14 @@ header .nav-links-container {
 header .nav-links-container ul {
     display: flex;
     flex-direction: row;
-    margin: 25px 15px 0px 0px;
+    margin: 20px 15px 0px 0px;
 }
 
 header .nav-links-container a {
     text-align: center;
-    padding: 16px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
     color: #20292F;
 }
 
@@ -59,45 +66,62 @@ header .nav-links-container a:hover {
     transition: all .4s ease-in-out;
 }
 
-/* Main */
-
-.grid-container{
+/** Section Grid Container **/
+section {
     display: grid;
     grid-template-columns: 1fr;
-    grid-row: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4fr 4fr 2fr .5fr;
     height: 100vh;
 }
 
-
-.landing-page{/*Span to two columns*/
-    background-color: aqua;
-    border-bottom: black solid 1px;
+/* Main */
+.landing-section-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    border: #000000 solid 1px;
+    overflow: hidden;
+}
+#landing-image-cover{
+    opacity: 0.6;
+}
+.landing-content {
+    opacity: 1;
+    /* Content Placement in the center */
+    grid-column: 2;
+    grid-row: 2;
+    /* Content Layout*/
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    color: #000000;
 }
 
-.showcase{/*Span to two columns*/
-    background-color: red;
-    border-bottom: black solid 1px;
+/* Showcase */
+.showcase-section-wrapper {
+    background: #212738;
+    color: #EEF0F2;
+    border: #000000 solid 1px;
 }
 
-.display-shop{ 
-    background-color: green;
-    border-bottom: black solid 1px;
+
+/*Display Section*/
+.display-section-wrapper {
+    border: #000000 solid 1px;
 }
 
+.information-section-wrapper {
+    border: #000000 solid 1px;
+}
+
+.footer-section-wrapper {
+    border: #000000 solid 1px;
+}
+
+/* Main */
 
 /* Footer */
-
-.footer-timesched-contact{ /*Add media query to stack*/
-    background:violet;
-    border-bottom: black solid 1px;
-}
-
-.footer-info{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    ga
-}
-
 
 /* Media Query */
 
