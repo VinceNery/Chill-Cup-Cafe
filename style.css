@@ -34,7 +34,7 @@ button {
     text-transform: uppercase;
     border: none;
     height: 54.5px;
-    width:150px;
+    width: 150px;
     color: #ffffff;
 }
 
@@ -102,9 +102,9 @@ button :hover {
 
 /* ========== Main ========== */
 .main-wrapper {
+    height: 710px;
     background: rgba(0, 0, 0, 0.5);
     background-image: url("../Chill-Cup/img/landing-section-background-image-cover.jpg");
-    height: 750px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -127,7 +127,7 @@ button :hover {
     align-items: center;
 }
 
-.main-content{
+.main-content {
     text-align: center;
     color: #ffffff;
     font-size: 35px;
@@ -135,11 +135,54 @@ button :hover {
 
 /* ========== Showcase Display ==========*/
 .showcase-wrapper {
+    height: auto;
     border: #000000 solid 1px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #1D2528;
+    color: #ffffff;
+}
+
+.showcase-content {
+    grid-row: 1;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    align-self: center;
+}
+
+.showcase-items-container {
+    align-self: center;
+    grid-row: 2;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    color: #DCA47D;
+    text-align: center;
+}
+
+@media (max-width:414px) {
+    .showcase-items-container {
+        grid-row: 2;
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: column wrap;
+        color: #DCA47D;
+        text-align: center;
+    }
+}
+
+.button_showcase {
+    grid-row: 3;
+    align-self: center;
+    justify-self: center;
 }
 
 /* ========== Display Shop ========== */
 .display-wrapper {
+    height: auto
+    display;
     border: #000000 solid 1px;
 }
 
