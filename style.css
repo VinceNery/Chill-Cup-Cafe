@@ -1,15 +1,17 @@
 @import url('https://fonts.google.com/specimen/Recursive?vfonly=true&sidebar.open=true&selection.family=Recursive');
 
-*{
-    box-sizing: border-box;
-}
 /* Global */
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Recursive', sans-serif;
     color: #20292F;
     background-color: #ffffff;
     margin: 0;
-    height: 100vh;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 a {
@@ -21,106 +23,133 @@ ul {
     list-style-type: none;
 }
 
-button{
+button {
     background-color: #DCA57D;
+    border-radius: 3px;
     letter-spacing: 3px;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 800;
     line-height: 25.5px;
     text-align: center;
     text-transform: uppercase;
-    word-spacing: 0px;
     border: none;
     height: 54.5px;
-    width: 95px;
+    width:150px;
     color: #ffffff;
-    text-decoration : rgb(255, 255, 255)
 }
 
-button :hover{
+button :hover {
     opacity: .6;
     transition: all .4s ease-in-out;
 }
 
 /* ========== Container Wrapper ==========*/
-.container-wrapper{
+.sectors {
     display: grid;
     grid-template-columns: 1fr;
-    grid-row: 4fr 4fr 2fr 2fr 1fr;
+    grid-template-rows: .1fr 2fr 1.5fr 1fr .5fr;
     height: 100vh;
 }
 
 /*========== Navigation Bar ==========*/
-.header-wrapper{
+.header-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-#header-container{
-    box-shadow: 0 3px 5px -1px rgba(0,0,0,.4);
+#header-container {
+    box-shadow: 0 3px 5px -3px rgba(0, 0, 0, .4);
 }
 
-.brand-name{
+.brand-name {
     margin-left: 15px;
     align-self: center;
 }
 
-.brand-name h1{
+.brand-name h1 {
     font-size: 25px;
     font-weight: 700;
 }
 
-.nav-links{
+.nav-links {
     grid-column: 3;
     padding: 5px;
-    align-items:center;
+    align-items: center;
 }
 
-.nav-links ul{
+.nav-links ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
 }
-.nav-links li{
+
+.nav-links li {
     margin: 0;
     padding: 5px;
 }
-.nav-links a{
+
+.nav-links a {
     text-align: center;
     font-size: 15px;
     font-weight: 600;
     color: #20292F;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     opacity: .4;
     transition: all .4s ease-in-out;
 }
 
 /* ========== Main ========== */
-.main-wrapper{
-    border: #000000 solid 1px;
+.main-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    background-image: url("../Chill-Cup/img/landing-section-background-image-cover.jpg");
+    height: 750px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Layout of the child content*/
     display: grid;
-    grid-template-columns: 1fr;
-    
-}   
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.main-image {
+    /* Placement */
+    grid-column: 1 / 4;
+    grid-row: 1/4;
+    /* Transparency */
+    background: rgba(0, 0, 0, 0.5);
+
+    /*Assigns it's child to be placed at the center*/
+    display: grid;
+    align-items: center;
+}
+
+.main-content{
+    text-align: center;
+    color: #ffffff;
+    font-size: 35px;
+}
 
 /* ========== Showcase Display ==========*/
-.showcase-wrapper{
+.showcase-wrapper {
     border: #000000 solid 1px;
 }
+
 /* ========== Display Shop ========== */
-.display-wrapper{
+.display-wrapper {
     border: #000000 solid 1px;
 }
 
 /* ========== Information Section==========*/
-.information-wrapper{
+.information-wrapper {
     border: #000000 solid 1px;
 }
 
 /* ========== Footer ========== */
-.footer-wrapper{
+.footer-wrapper {
     border: #000000 solid 1px;
 }
 
