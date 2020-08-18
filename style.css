@@ -44,7 +44,7 @@ button :hover {
 }
 
 /* ========== Container Wrapper ==========*/
-.sectors {
+.sector-container{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: .1fr 2fr 1.5fr 1fr .5fr;
@@ -135,14 +135,12 @@ button :hover {
 
 /* ========== Showcase Display ==========*/
 .showcase-wrapper {
-    height: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     background-color: #1D2528;
     color: #ffffff;
     padding: 20px;
-
 }
 
 .showcase-content {
@@ -154,8 +152,8 @@ button :hover {
 }
 
 .showcase-items-container {
-    align-self: center;
     grid-row: 2;
+    align-self: center;
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
@@ -227,13 +225,27 @@ button :hover {
 /* ========== Information Section==========*/
 .information-wrapper {
     border: #000000 solid 1px;
-    display:flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    background-image: url("../Chill-Cup/img/information-coffee-bean.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
+.information-timesched{
+    border: #000000 solid 1px;
+    align-items: center;
+}
 
-
+.information-contact{
+    background: #000000;
+    color: #ffffff;
+    
+    align-items: center;
+}
 /* ========== Footer ========== */
 .footer-wrapper {
     border: #000000 solid 1px;
