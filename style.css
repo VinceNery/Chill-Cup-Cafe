@@ -103,7 +103,6 @@ button :hover {
 /* ========== Main ========== */
 .main-wrapper {
     height: 710px;
-    background: rgba(0, 0, 0, 0.5);
     background-image: url("../Chill-Cup/img/landing-section-background-image-cover.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -237,14 +236,17 @@ button :hover {
 
 .information-timesched{
     border: #000000 solid 1px;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    color:#ffffff;
 }
 
 .information-contact{
     background: #000000;
     color: #ffffff;
-    
-    align-items: center;
+    flex-direction: column;
 }
 /* ========== Footer ========== */
 .footer-wrapper {
